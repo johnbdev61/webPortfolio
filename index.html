@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+<!--Nav Section-->
+    <h1>John Byrne</h1>
+      <nav>
+        <ul id="menu" class="menuitem">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+<!--Introduction Section-->
+    <section id="home">
+        <div class="group">
+          <div class="item">
+            <img src="images/profilePic.jpg" alt="This is me!">
+          </div>
+          <div class="item-double">
+          <h2>Hi! I'm John</h2>  
+            <p>I am a former technical sales representative living in Chicago, Illinois. As I continue my journey through Thinkful, I will update this page with projects that I have worked on and skills that I have developed. Hopefully, by the end of this course, I will have proved myself as a worthy addition to your company. I believe that my sales history and my new software developer skillset make me a unique candidate.</p>
+            <p>In the last ten years of my professional life, I have built many relationships with potential customers and earned their business. Furthermore, I worked with a diverse team of service technicians, engineers, and factory reps. We all brought our unique skill sets together to deliver a custom product tailored to our customers' needs.</p>        
+          </div>
+        </div>
+    </section>  
+<!--About Me Section-->
+    <section id="about" class="bg">
+      <div class ="group">
+        <div class ="item-double">
+        <h2>About Me</h2>  
+          <p>I have always been passionate about technology and computers, and coding mainlines that reward center of my brain. Since I was a teenager, I have been writing songs with other artists that began as ideas and then grew into a structure made up of chord changes and lyrics. Coding is very similar to me. Sure, some rules must be followed, but the potential for creativity is limitless. Like I worked with my former bandmates, I can't wait to collaborate with other developers!</p>
+
+          <p>In addition to writing music, I also enjoy spending time with my wife & daughter, playing video games, and discussing movies.</p>
+          <h3>List of Services I can provide a client:</h3>
+            <ul>
+              <li>Full Stack Web Development</li>
+              <li>Sales and Communication Skills</li>
+              <li>10 Years of Teamwork Experience</li>
+            </ul>    
+        </div>
+<!--Picture to accent my talking point-->        
+        <div class ="item">
+          <img src="images/guitarPic.jpg" alt="My Instruments">
+        </div>
+      </div>
+    </section>
+
+<!--Portfolio section. Flexbox 2 groups each with 2 items. Used dummy links-->
+    <section id="portfolio">
+      <h2 class ="mobile-margin">My Portfolio</h2>
+      <div class="group">
+        <div class="item">
+          <a href="url"><img src= "images/whyNotPlaceholder.jpg" alt="Why Not?"></a>
+          <h2>My First App</h2>
+          <p>Here is the description of the first app I built. It probably won't change the world or anything, but if it does, please don't steal it!</p>
+        </div>
+        <div class="item">
+          <a href="url"><img src= "images/whyNotPlaceholder.jpg" alt="Why Not?"></a>
+          <h2>My Second App</h2>
+          <p>Here is the description of the second app that I built. If this is the one that changes the world, you have my permission to steal the first one.</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="item">
+          <a href="url"><img src= "images/whyNotPlaceholder.jpg" alt="Why Not?"></a>
+          <h2>My Third App</h2>
+          <p>Here is the description of the third app that I built. If by now I have not changed the world with my previous apps, this is the one.</p>
+        </div>
+        <div class="item">
+          <a href="url"><img src= "images/whyNotPlaceholder.jpg" alt="Why Not?"></a>
+          <h2>My Fourth App</h2>
+          <p>Here is the description of the fourth app that I built. I mailed this one in because I'm pretty sure that I'll have changed the world by now, right?</p>
+        </div>
+      </div>
+    </section>  
+<!--Put 'Contact John' outside group container because it looks better-->
+    <section id="contact">
+      <h2 class="mobile-margin margin">Contact John</h2>  
+      <div class="group">
+<!--Contact Form-->
+        <div class="item">       
+          <form action="https://formspree.io/f/xrgoppvk" method="POST">
+            <label for="text">Name:</label>
+            <input id="text" name="name">
+            <label for="email">Email:</label>
+            <input id="email" name="_replyto">
+            <label for="user-message">Message:</label>
+            <textarea id="user-message" name="message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+<!--Contact Links and Google Maps iframe-->
+        <div class="item-double">
+          <p><a href="mailto:jbyrne87@gmail.com">Send Me an Email!</a></p>
+          <p><a href="https://github.com/johnbdev61">My GitHub Profile</a></p>
+          <p><a href="https://linkedin.com/in/john-byrne-718068a6">My LinkedIn Profile</a></p>              
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.33858607436!2d-87.87204490177932!3d41.83390366540331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1599447928078!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>             
+  </main>
+<footer><p>© John Byrne</p></footer> 
+</body>
+</html>        
